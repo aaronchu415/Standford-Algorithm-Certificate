@@ -57,3 +57,13 @@ def countInversionsGlobal(A):
     inversions += inversionsMerge
 
     return inversions, sortedArr
+
+
+f = open("InversionInput.txt", "r")
+
+arr = []
+for line in f:
+    n = int(line)
+    arr.append(n)
+
+print(countInversionsGlobal(arr)[0])
